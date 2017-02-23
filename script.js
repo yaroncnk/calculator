@@ -29,15 +29,16 @@ $(document).ready(function(){
 		}
     });
     $("#equals").click(function(){
-		if (operator === "+"){
+	 	/* if (operator === "+"){
 			answer = (parseInt(newnumber, 10) + parseInt(number,10)).toString(10);
 		} else if (operator === "-"){
-			answer = (parseInt(newnumber, 10) - parseInt(number,10)).toString(10);
+			answer = (parseInt(newnumber, 10) - parseInt(number, 10)).toString(10);
 		} else if (operator === "/"){
 			answer = (parseInt(newnumber, 10) / parseInt(number,10)).toString(10);
 		} else if (operator === "*"){
 			answer = (parseInt(newnumber, 10) * parseInt(number,10)).toString(10);
-		}
+		} */
+		answer = eval(equation);
 		totaldiv.text(answer);
 		answer ="";
 		number = "";
